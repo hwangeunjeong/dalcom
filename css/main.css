@@ -1,0 +1,170 @@
+@import url(common.css);
+
+body {
+    background: url(../img/backimg.png);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.wrap {
+    width: 100%;
+}
+
+
+/* logo */
+#top {
+    margin: 0 auto;
+    width:100%;
+    height:150px;
+}
+
+#top .logotop {
+    text-align: center;
+    height: 50px;
+
+}
+
+
+
+/* 유틸메뉴 */
+.util_menu {
+    width:400px;
+    height:100px;
+}
+
+.util_menu ul {
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.util_menu ul li {
+    float: left;
+    padding: 0 10px;
+}
+
+.util_menu ul li:first-child {
+    border-left: none;
+}
+
+.util_menu ul li a {
+    color: #504844;
+    font-size: 10px;
+}
+
+
+.util_menu ul li a:hover {
+    color: #c00;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/* 경기 이미지 */
+
+.center{
+    width:800px;
+    float:right;
+    margin-bottom:50px;
+}
+.center img{
+    width:350px;
+}
+
+
+
+/*세로형 메뉴*/
+
+#menu {
+}
+#menu .menuber{}
+
+#menu .menuber ul{
+}
+
+#menu .menuber ul li{
+    position: relative;
+}
+
+#menu .menuber ul li .sub{
+    position:absolute;
+}
+ 
+
+
+
+
+/* .menubar>li:hover .sub {
+    left: 100px;
+
+}
+.menubar>li a:hover {
+    display: block;
+    background: #AB06AD;
+
+} */
+/*.sub {
+    width: 100px;
+    background: black;
+    position: absolute;
+    top: 0;
+    right:0px;
+}*/
+/* .sub>li:hover {
+    right:500px;
+}
+.sub>li a:hover {
+    display: block;
+    background: #504844;
+
+} */
+
+
+}
+
+
+/*  section1*/
+#spring {
+    padding-top: 150px;
+    margin: 50px;
+}
+
+span {
+    color: pink;
+    font-size: 30px;
+
+}
+
+#spring .springsol {
+    border-top: 1px solid gray;
+    margin: 10px;
+}
+
+#spring .ticket {
+    /*경기아트센터박스*/
+    border: 1px solid #5a5451;
+    width: 700px;
+    height: 300px;
+    background-color: #756e6a;
+
+}
+
+#spring .ticket p {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+
+}
+
+#spring .ticket div {
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #751c23;
+    background-color: #751c23;
+    width: 200px;
+    height: 30x;
+    margin: 0 auto;
+    color: white;
+}
+

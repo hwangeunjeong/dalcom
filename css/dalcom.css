@@ -1,0 +1,817 @@
+@import url(common.css);
+
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOHIBaeumOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    /* background-color: #fefde9; */
+    background-color:#fefef3;
+}
+
+#txt1{position:fixed;top:10px;right:10px;} 
+
+header {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    z-index: 1000;
+}
+
+
+.wrap {width: 100%;} 
+
+
+.ohjo{
+    width:100%;
+}
+
+
+/*_________________________________로고*/ 
+#toplg {
+    width: 100%;
+    height: 50px;
+}
+
+#toplg .top {
+    padding-left: 50px;
+    margin: 50px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+#toplg .top p { /* 로고글씨 */
+    font-family: 'KOHIBaeumOTF';
+    color: #ff6600;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*_________________________________보라박스*/ 
+.texttop { 
+    width: 350px;
+    height: 200px;
+    /* margin: 0 auto; */
+    margin-top: 740px;
+    /* position: absolute; */
+    margin-left: 1600px;
+    position: fixed;
+}
+
+
+/*_________________________________유틸메뉴*/ 
+.util_menu {
+    width: 100%;
+    height: 100px;
+    padding-left: 50px;
+    font-family: 'KOHIBaeumOTF';
+}
+
+.util_menu ul {
+    margin-top: 10px;
+    padding: 70px;
+}
+
+.util_menu ul li {
+    float: left;
+    padding: 0 10px;
+}
+
+.util_menu ul li:first-child {
+    border-left: none;
+}
+
+.util_menu ul li a {
+    color: #504844;
+    font-size: 10px;
+}
+
+.util_menu ul li a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.material-icons:hover {
+    color: #ff6600;
+}
+
+
+/*_________________________________메뉴*/ 
+.gnb {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    padding-left: 500px;
+}
+
+/* 주메뉴 */
+.gnbMenu {
+    width: 100%;
+    float: right;
+}
+
+.gnbMenu>li {
+    float: left;
+    width: 150px;
+    position: relative;
+}
+
+.gnbMenu>li>a {/*상단메뉴글씨*/
+    display: block;
+    color: #1b284d;
+    font-size: 20px;
+    font-weight:bold;
+    line-height: 50px;
+}
+
+.gnbMenu>li:hover>a {
+    color: #ff6600;
+
+}
+
+/*상단메뉴글씨호버*/
+.gnbMenu li span {     /*원*/
+    width: 5px;
+    height: 5px;
+    background: #ff6600;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+}
+
+.gnbMenu>li:hover span {
+    background-color: #ff6600;
+    opacity: 1;
+}
+
+
+/* 서브메뉴 */
+.gnbMenu>li .smenu {/*모든 서브메뉴*/
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding-top: 10px;
+    width: 150px;
+    height: 200px;
+    z-index: 1000;
+}
+
+.gnbMenu ul {
+    position: absolute;
+}
+
+.gnbMenu>li ul li {
+    padding: 10px 0px;
+    transition: all 0.1s;
+}
+
+.gnbMenu>li ul li a {/*서브글씨*/
+    color: #ff6600;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.gnbMenu>li ul li:hover {text-decoration: underline;}
+
+.bg_box {/*100%서브배경박스*/
+    display: none;
+    width: 100%;
+    height: 200px;
+    background: #cbe8e8;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 500;
+}
+
+/* 서브메뉴  */
+.gnbMenu>li .smenu {
+    /*모든 서브메뉴*/
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding-top: 10px;
+    width: 150px;
+    height: 200px;
+    z-index: 1000;
+}
+
+.gnbMenu ul {position: absolute;}
+
+.gnbMenu>li ul li {
+    padding: 10px 0px;
+    transition: all 0.1s;
+}
+
+.gnbMenu>li ul li a {/*서브글씨*/
+    color: #ff6600;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.gnbMenu>li ul li:hover {text-decoration: underline;}
+
+.bg_box {    /*100%서브배경박스*/
+    display: none;
+    width: 100%;
+    height: 200px;
+    background: #fefde9;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 500;
+}
+
+
+/*_________________________________비쥬얼*/ 
+@keyframes one1 {
+
+    /*원애니메이션  */
+    0% {
+        top: 5%;
+    }
+
+    100% {
+        bottom: 10%;
+    }
+}
+
+#Visual {/*비쥬얼 전체영역*/
+    width: 100%;
+    height: 800px;
+    padding-left: 75px;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    padding-top: 20px;
+}
+
+#Visual .left {/*왼쪽사진 전체영역*/
+    position: absolute;
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 900px;
+    height: 400px;
+    background: url(/img/vv.png);
+    transition: all 0.4s;
+}
+
+#Visual .left:hover {}
+
+#Visual .lefttxt {/*왼쪽 텍스트 */
+    position: absolute;
+    width: 1200px;
+    margin: 0 auto;
+    margin: 100px;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+#Visual .lefttxt h1 {/*Dal.Komm Life Happens*/
+    font-size: 30px;
+    color: white;
+}
+
+#Visual .lefttxt h2 {/*coffee */
+    font-size: 70px;
+    color: white;
+}
+
+#Visual .lefttxt h2:hover {
+    font-size: 70px;
+    color: #503b91;
+}
+
+#Visual .leftone {/*왼쪽 원*/
+    width: 1200px;
+    margin: 0 auto;
+    top: 10%;
+    animation: one2 7s infinite alternate;
+    position: absolute;
+    padding-top: 70px;
+    padding-left: 100px;
+}
+
+
+#Visual .leftho {/*왼쪽 집 */
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    padding-top: 70px;
+    padding-left: 50px;
+    top: 10%;
+    animation: one1 4s infinite alternate;
+    transition: all 0.5s;
+}
+
+/* 비주얼오른쪽  */
+#slideShowUp {
+    position: relative;
+    overflow: hidden;
+    width: 940px;
+    height: 430px;
+    margin-left: 800px;
+}
+
+#slideShowUp .slideUp ul {position: absolute;}
+
+/*하단버튼*/
+#slideShowUp .slideUp_btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#slideShowUp .slideUp_btn ul li {
+    background: #fff0f1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 7px 0;
+    cursor: pointer;
+}
+
+#slideShowUp .slideUp_btn ul li.activeup {
+    background: #ff6600;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#Sangsang3 .coffetxt {
+    text-align: center;
+    margin-top: 200px;
+    width: 1700px;
+    height: 300px;
+    font-size: 50px;
+    font-family: 'LeferiBaseType-RegularA';
+}
+
+
+/*_________________________________세션0*/ 
+#News{ /*전체영역*/
+    width:1200px;
+    height:800px;
+    /* width:1200px;
+    height:320px; */
+    text-align: center;
+    margin:0 auto;
+}
+
+.ssss{
+  padding-top:200px;
+}
+
+.main-tit1{
+    color:#1b284d;
+    font-size:35px;
+    text-align: center;
+}
+
+.show1{
+    font-size:10px;
+    font-weight:bold;
+    position: relative;
+    text-align: center;
+}
+
+#News .news1{width:1200px;}
+
+#News .news2{
+    width:1200px;
+    text-align: center;
+    background-color:red;
+}
+
+#News .news1 h4{ /*달콤뉴스 */
+    font-size:35px;
+    width:100%;
+    margin-bottom:10px;
+    font-weight:bold;
+    padding-top:200px;
+    color:#1b284d;
+    margin:0 auto;
+
+}
+#News .news1 .show{
+    font-size:10px;
+    font-weight:bold;
+    position: relative;
+}
+
+#News .news1 .show:hover{
+    cursor: pointer;
+    color:#1b284d;
+    text-decoration: underline;
+}
+
+#News .news1 ul{
+    width:990px;
+    display:inline-block;
+}
+#News .news1 ul li{
+    width:310px;
+    height:320px;
+    /* width:310px;
+    height:320px; */
+    float:left;
+    margin:0 10px;
+    transition:all 0.3s;
+    /* padding-left:100px; */
+}
+
+
+  #News .news1 ul li img{ 
+    transition:all 0.3s;}
+
+  #News .news1 ul li:hover img{
+    opacity:0.5;
+}
+  
+  .news1 ul li .all_title{padding:10px;}
+  .news1 ul li .text{color:#83a90d;}
+  .news1 ul li .tet11{ /*박스 텍스트*/
+      margin-top:8px;
+      font-size:18px;
+  }
+  
+  /*오버시에 보이는 텍스트와 버튼*/
+  .news1 ul li .all_title{
+    padding:20px;
+    background-color:#fff;
+}
+
+.news1 ul li:hover .all_title{
+    border-bottom:4px solid #ff6600;
+}
+
+.news1 .greenbtn{ /*자세히보기 버튼*/
+    display:block;
+    width:100px;
+    margin:0 auto;
+    background-color:#ff6600;
+    text-align:center;
+    color:#fff;
+    margin-top:5px;
+    padding:5px;
+}
+
+.news1 ul li:hover .greenbtn{
+    background-color:#ff6600;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+  .hover4 ul li .tet12{
+      font-size:15px;
+      line-height:20px;
+  }
+  .hover4 ul li .greenbtn a{ /*자세히보기 버튼*/
+    display:block;
+    width:100px;
+    background:#83a90d;
+    text-align:center;
+    color:#fff;
+    margin-top:5px;
+    padding:5px;
+  }
+
+
+
+
+/*_________________________________세션1*/ 
+/* 텍스트 */
+
+
+.main-tit{
+    text-align: center;
+    color:#1b284d;
+    font-size:35px;
+    text-align: center;
+    margin:0 auto;
+    padding-right:150px;
+}
+
+.show{
+    font-size:10px;
+    font-weight:bold;
+    position: relative;
+    text-align: center;
+    padding-right:150px;
+
+}
+
+#Season .show:hover{
+    cursor: pointer;
+    color:#1b284d;
+    text-decoration: underline;
+}
+
+
+/* 전체영역 */
+#Season {
+    width:1920px;
+    height:600px;
+    position: relative;
+    margin-left:200px;
+    /* background:url(../img/cloud_01.png); */
+}
+
+/* coffee 갤러리 */
+#Season .sub1 li {
+    position: absolute; 
+    top: 21px;
+    left: 28px;
+    padding-left:50px;
+}
+
+#Season .sub1 img { /*커피메인이미지*/
+    width: 350px;
+    height: 350px;
+    margin-top:150px;
+}
+
+#Season .sub1 li{display:none;}
+
+/* #Season .sub1 li:first-child {display: block;} */
+
+#Season .sub2{
+    position: absolute;
+    /* right:80px;
+    bottom:50px; */
+    top:370px;
+    left: 350px
+}
+
+#Season .sub2 li{
+    float: left;
+    margin-left:50px;
+    opacity: 0.3;
+
+}
+
+#Season .sub2 li:first-child {opacity: 1;}
+
+#Season .sub2 img { /* 서브이미지 */
+    /* width:50px;
+    height: 57px; */
+    width: 150px;
+    height: 150px;
+    padding-left:50px;
+    position: relative;
+}
+
+#Season .sub2 img:hover{
+    transform: scale(1.5);
+    transition:all 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+#Season .left_btn { /* 왼쪽버튼 */
+    position: absolute;
+    left:50px;
+    top:300px;
+    z-index:200;
+
+}
+
+#Season .right_btn {/* 오른쪽버튼 */
+    position: absolute;
+    left:400px;
+    top:300px;
+    z-index:200;
+
+}
+
+.imgText li{
+	display:none;
+	position:absolute;
+	left:120px;
+    bottom:-10px;
+}
+.imgText li:first-child{display:block;}
+
+.imgText li strong{
+	color:#fff;
+	font-size:20px;
+}
+
+
+/*_________________________________세션2*/ 
+#Sangsang3{
+    width: 100%;
+    height:800px;
+    margin:0 auto;
+    text-align: center;
+}
+
+#Sangsang3 .coffetxt h3 {/*달콤이 선사하는 */
+    font-size: 40px;
+    color:#ff6600;
+    text-align: center;
+    padding-left:100px;
+}
+
+/* #Sangsang3 .coffetxt h3:hover{ color: #ff6600;} */
+
+#Sangsang3 .coffetxt .ii {
+    font-size: 20px;
+    color: #1a1a1a;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-weight:bold;
+    padding-left:150px;
+
+}
+
+/*_________________________________세션2 커피*/ 
+#coffee {
+    position: relative;
+    width: 940px;
+    height: 430px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#coffee .ban ul {
+    position: absolute;
+    width: 3760px;
+    transition: all 0.5s;
+    /*슬라이드가 가로방향일때만->이미지의 총가로길이(940*4)*/
+}
+
+#coffee .ban ul li {float: left;}
+
+
+
+/*_________________________________세션3*/ 
+#Sangsang {
+    width: 1800px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 300px;
+    position: relative;
+
+}
+
+#Sangsang .sangtxt {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#Sangsang .sang1 {/* 세션3 전체영역 */
+    margin-bottom: 180px;
+    border-bottom: 10px solid #503b91;
+    padding-left: 300px;
+}
+
+#Sangsang .sang1:hover img {}
+
+#Sangsang .nol2 {/*상상놀이터이미지 */position: absolute;}
+
+#Sangsang .mz { /* 텍스트 전체영역 */
+    width: 100%;
+    height: 200px;
+    padding-left: 300px;
+}
+
+#Sangsang .mz1 {/* mz세대를 위한 */
+    margin: 0 auto;
+    font-size: 30px;
+    color: #503b91;
+    font-weight: bold;
+    padding: 120px;
+    margin-left: 40px;
+}
+
+#Sangsang .sangimg {
+    background: gray;
+    margin: 0 auto;
+}
+
+#Sangsang .snag2 {}
+
+#Sangsang .snag2 ul {}
+
+#Sangsang .sangimg .snag2 ul li {float: left;}
+
+#Sangsang .sangimg img {
+    /* 빵이미지 */
+    width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 50px;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1000;
+}
+
+#Sangsang .snag2 ul li:hover img {/* 빵이미지 호버 */
+    transform: rotateX(20deg) translate3d(20px, 30px, 20px);
+    background: #ff6600;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#Sangsang .oneback { /* 빵배경이미지  */
+    position: absolute;
+    animation: one2 7s infinite alternate;
+    transition: all 0.5s;
+    margin-left: 250px;
+    width: 1200px;
+}
+
+@keyframes one2 { /* 빵배경이미지 호버 */
+
+    0% {
+        top: 5%;
+    }
+
+    100% {
+        top: 10%;
+    }
+}
+
+
+
+
+
+.insta{
+    color: #222222;
+    letter-spacing: -0.4px;
+    box-sizing: border-box;
+    display: block;
+    padding: 120px 0 100px 0;
+    height: 725px;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.inner ul{
+    font: 400 14px/20px 'Noto Sans KR', "돋움", Dotum, AppleGothic, sans-serif;
+    color: #222222;
+    letter-spacing: -0.4px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.insta li {
+    float: left;
+    width: 294px;
+    height: 294px;
+    background-color: #000;
+    position: relative;
+}
+.inner ul li{
+    
+    color: #222222;
+    letter-spacing: -0.4px;
+    list-style: none;
+    box-sizing: border-box;
+    float: left;
+    width: 294px;
+    height: 294px;
+    position: relative;
+}
+.inner ul li:hover{
+font: 400 14px/20px 'Noto Sans KR', "돋움", Dotum, AppleGothic, sans-serif;
+color: #222222;
+letter-spacing: -0.4px;
+list-style: none;
+box-sizing: border-box;
+float: left;
+width: 294px;
+height: 294px;
+background-color: #000;
+position: relative;
+margin-left: 8px;}
